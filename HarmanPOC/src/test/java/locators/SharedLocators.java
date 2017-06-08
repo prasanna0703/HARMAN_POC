@@ -8,7 +8,6 @@ public class SharedLocators {
 			WOMEN					= "//a[text()='Women'][@title='Women']",
 			SEARCHED_TEXT			= "//span[@class='lighter'][contains(text(),'",
 			PROCEED_TO_CHECKOUT		= "//span[contains(.,'Proceed to checkout')]/parent::a[@style='']",
-			PRODUCT_DETAILS			= "//a[text()='Printed Dress']/parent::p/parent::td/following-sibling::td//span[text()='$50.99']/parent::span/parent::td/following-sibling::td/input[@value='1']/parent::td/following-sibling::td/span[contains(text(),'$50.99')]",
 			SPACE					= " ",
 			COMMA					= ", ";
 	

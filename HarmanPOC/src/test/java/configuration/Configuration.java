@@ -22,8 +22,8 @@ public class Configuration {
 		cap.setBrowserName(browserName);
 
 		if(browserName.equals("firefox")) {
-			/*System.setProperty("webdriver.gecko.driver",System.getProperty("webdriver.gecko.driver",
-					".//src//test//resources//BrowserDrivers//geckodriver.exe"));*/
+			System.setProperty("webdriver.gecko.driver",System.getProperty("webdriver.gecko.driver",
+					".//src//test//resources//BrowserDrivers//geckodriver.exe"));
 			driver = new FirefoxDriver(cap);
 			
 		} else if(browserName.equals("chrome")) {
