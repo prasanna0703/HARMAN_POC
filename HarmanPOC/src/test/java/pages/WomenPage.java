@@ -27,23 +27,7 @@ public class WomenPage {
 		this.driver = driver;
 		this.wait	= wait;
 	}
-
-	/*public WomenPage addProductsToCart(ArrayList<String> dressName, List<Double> price) throws Exception{
-		Iterator<String> iterator = dressName.iterator();
-		Iterator<Double> iterator1 = price.iterator();
-		while (iterator.hasNext()) {
-			String next = iterator.next();
-			Double nextPrice = iterator1.next();
-			WebElement element = driver.findElement(By.xpath(WomenLocators.ADD_TO_CART1 + next + WomenLocators.ADD_TO_CART2 + nextPrice + WomenLocators.ADD_TO_CART3));
-			Actions action = new Actions(this.driver);
-			action.moveToElement(element).build().perform();
-			JavascriptExecutor executor = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();", element);
-		}
-		return this;
-	}*/
-
-
+	
 	public WomenPage addProductsToCart(String dressName, String price) throws Exception{
 		WebElement element = driver.findElement(By.xpath(WomenLocators.ADD_TO_CART1 + dressName + WomenLocators.ADD_TO_CART2 + price + WomenLocators.ADD_TO_CART3));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
